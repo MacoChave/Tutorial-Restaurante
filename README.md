@@ -14,8 +14,28 @@
 
 ### Desde la terminal
 
+Crear un directorio para el proyecto de la API REST y navegar a él.
+
+```bash
+mkdir restaurante-api && cd restaurante-api
+```
+
+Crear un proyecto de API REST con .NET Core 8.
+
 ```bash
 dotnet new webapi -n restaurante-api
+```
+
+Crear el archivo solución
+
+```bash
+dotnet new sln -n restaurante-api
+```
+
+Agregar el proyecto a la solución
+
+```bash
+dotnet sln restaurante-api add restaurante-api/restaurante-api.csproj
 ```
 
 ### Desde Visual Studio
@@ -35,10 +55,18 @@ npx create-vite restaurante-web --template react
 
     D:.
     ├───restaurante-api
-    │   ├───bin => Archivos binarios
-    │   ├───Controllers => Libreta donde apunta el mesero
-    │   ├───obj => Archivos intermedios
-    │   └───Properties => Propiedades del proyecto
+        └───restaurante-api
+            ├───bin => Archivos binarios
+            │   └───Debug
+            │       └───net8.0
+            ├───Controllers => Controladores de la API
+            ├───obj => Archivos de objetos
+            │   └───Debug
+            │       └───net8.0
+            │           ├───ref
+            │           ├───refint
+            │           └───staticwebassets
+            └───Properties => Propiedades del proyecto
     └───restaurante-web
         ├───node_modules => Módulos de Node.js
         ├───public => Archivos públicos
