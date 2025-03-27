@@ -1,8 +1,12 @@
-﻿namespace restaurante_api.Services
+﻿using Microsoft.Extensions.Options;
+using MongoDB.Driver;
+using restaurante_api.Models;
+
+namespace restaurante_api.Services
 {
     interface IOrdenService
     {
-        public dynamic CrearOrden(string name);
+        public dynamic CrearOrden(Ventas pedido);
         public dynamic UpdateOrden(string name);
         public dynamic DeleteOrden(string name);
         public dynamic GetOrden(string name);
@@ -14,8 +18,13 @@
      */
     public class OrdenService : IOrdenService
     {
-        public OrdenService()
+        private readonly IMongoCollection<Ventas> _pedidoCollection;
+
+        public OrdenService(IConfiguration configuration)
         {
+            var client = new MongoClient(configuration.GetConnectionString("RestauranteDb"));
+            var database = client.GetDatabase("RestauranteDb");
+            _pedidoCollection = database.GetCollection<Ventas>("Pedidos");
         }
 
         /**
@@ -28,9 +37,10 @@
             return new { Orden = name, Fecha = DateTime.Now };
         }
 
-        public dynamic CrearOrden(string name)
+        public dynamic CrearOrden(Ventas pedido)
         {
-            throw new NotImplementedException();
+            _pedidoCollection.InsertOne(pedido);
+            return new { Mensaje = "Orden creada" };
         }
 
         public dynamic DeleteOrden(string name)

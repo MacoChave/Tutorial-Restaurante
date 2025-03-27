@@ -4,9 +4,12 @@
         -   [Desde la terminal](#desde-la-terminal)
         -   [Desde Visual Studio](#desde-visual-studio)
     -   [Crear un proyecto de aplicación web con React y Vite](#crear-un-proyecto-de-aplicación-web-con-react-y-vite)
+    -   [Base de datos - Mongo DB](#base-de-datos---mongo-db)
     -   [Árbol de directorios](#árbol-de-directorios)
 
 # Tutorial de Restaurante
+
+[Enunciado del problema](Enunciado.md)
 
 # Crear los proyectos
 
@@ -50,6 +53,10 @@ dotnet sln restaurante-api add restaurante-api/restaurante-api.csproj
 ```bash
 npx create-vite restaurante-web --template react
 ```
+
+## Base de datos - Mongo DB
+
+[Crear base de datos MongoDB](https://account.mongodb.com/account/login?n=https%3A%2F%2Fcloud.mongodb.com%2Fv2%2F6600ffc9ef409c31f908c973&nextHash=%23overview&signedOut=true)
 
 ## Árbol de directorios
 
