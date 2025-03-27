@@ -1,7 +1,12 @@
-﻿namespace restaurante_api.Models
+﻿using Newtonsoft.Json;
+
+namespace restaurante_api.Models
 {
     public class Producto
     {
+        [JsonProperty("_id", NullValueHandling = NullValueHandling.Ignore)]
+        public string Id;
+
         [JsonProperty("producto_id", NullValueHandling = NullValueHandling.Ignore)]
         public string ProductoId;
 
@@ -10,9 +15,6 @@
 
         [JsonProperty("precio_unitario", NullValueHandling = NullValueHandling.Ignore)]
         public string PrecioUnitario;
-
-        [JsonProperty("_id", NullValueHandling = NullValueHandling.Ignore)]
-        public string Id;
 
         [JsonProperty("nombre", NullValueHandling = NullValueHandling.Ignore)]
         public string Nombre;

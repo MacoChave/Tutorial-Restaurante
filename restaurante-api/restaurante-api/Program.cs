@@ -11,6 +11,7 @@ builder.Services.AddSwaggerGen();
 
 // Registrar interfaces creadas
 builder.Services.AddScoped<IOrdenService, OrdenService>();
+builder.Services.AddScoped<IInventarioService, InventarioService>();
 
 var app = builder.Build();
 

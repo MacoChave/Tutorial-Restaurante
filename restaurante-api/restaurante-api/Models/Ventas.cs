@@ -1,4 +1,5 @@
-﻿using System.Security.Principal;
+﻿using Newtonsoft.Json;
+using System.Security.Principal;
 
 namespace restaurante_api.Models
 {

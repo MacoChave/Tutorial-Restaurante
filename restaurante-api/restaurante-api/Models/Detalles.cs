@@ -1,4 +1,6 @@
-﻿namespace restaurante_api.Models
+﻿using Newtonsoft.Json;
+
+namespace restaurante_api.Models
 {
     public class Detalles
     {
