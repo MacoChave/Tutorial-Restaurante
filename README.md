@@ -1,11 +1,11 @@
--   [Tutorial de Restaurante](#tutorial-de-restaurante)
--   [Crear los proyectos](#crear-los-proyectos)
-    -   [Crear un proyecto de API REST con .NET Core 8](#crear-un-proyecto-de-api-rest-con-net-core-8)
-        -   [Desde la terminal](#desde-la-terminal)
-        -   [Desde Visual Studio](#desde-visual-studio)
-    -   [Crear un proyecto de aplicación web con React y Vite](#crear-un-proyecto-de-aplicación-web-con-react-y-vite)
-    -   [Base de datos - Mongo DB](#base-de-datos---mongo-db)
-    -   [Árbol de directorios](#árbol-de-directorios)
+- [Tutorial de Restaurante](#tutorial-de-restaurante)
+- [Crear los proyectos](#crear-los-proyectos)
+  - [Crear un proyecto de API REST con .NET Core 8](#crear-un-proyecto-de-api-rest-con-net-core-8)
+    - [Desde la terminal](#desde-la-terminal)
+    - [Desde Visual Studio](#desde-visual-studio)
+  - [Crear un proyecto de aplicación web con React y Vite](#crear-un-proyecto-de-aplicación-web-con-react-y-vite)
+  - [Base de datos - Mongo DB](#base-de-datos---mongo-db)
+  - [Árbol de directorios](#árbol-de-directorios)
 
 # Tutorial de Restaurante
 
@@ -53,6 +53,8 @@ dotnet sln restaurante-api add restaurante-api/restaurante-api.csproj
 ```bash
 npx create-vite restaurante-web --template react
 ```
+
+[Detalles de la aplicación web](/restaurante-web/README.md)
 
 ## Base de datos - Mongo DB
 
