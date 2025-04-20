@@ -1,0 +1,30 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		/* Modules */
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+
+		/* JavaScript Support */
+		"allowJs": true,
+
+		/* Emit */
+
+		/* Interop Constraints */
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+
+		/* Type Checking */
+		"strict": true,
+
+		/* Completeness */
+		"skipLibCheck": true,
+
+		"jsx": "react-jsx",
+		"useDefineForClassFields": true,
+		"lib": ["DOM", "ESNext"]
+	},
+	"include": ["src"]
+}
