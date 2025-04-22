@@ -1,14 +1,12 @@
 import { z } from 'zod';
 
 export type PlatilloFormData = {
-	id: string;
 	meatType: string;
 	meatDoneness: string;
 	selectedSides: string[];
 };
 
 export const PlatilloSchema = z.object({
-	id: z.string(),
 	meatType: z.string({ message: 'Seleccione un tipo de carne' }),
 	meatDoneness: z.string({ message: 'Seleccione un término de cocción' }),
 	selectedSides: z

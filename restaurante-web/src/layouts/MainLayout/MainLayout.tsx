@@ -16,7 +16,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({
 }) => {
 	return (
 		<div className='w-full h-full flex flex-col border-4 border-dashed border-red-400'>
-			<Header title={title} subtitle={subtitle}>
+			<Header icon={`🍕`} title={title} subtitle={subtitle}>
 				{goHome && (
 					<a href='/' className='mainlayout__home'>
 						<i className='fas fa-home'></i>

@@ -16,7 +16,6 @@ const Platillos: React.FC<PlatillosProps> = ({}) => {
 
 	const agregarPlatillo = () => {
 		const nuevoPlatillo: PlatilloProps = {
-			id: Math.random().toString(36).substring(2, 15),
 			meatType: '',
 			meatDoneness: '',
 			selectedSides: [],

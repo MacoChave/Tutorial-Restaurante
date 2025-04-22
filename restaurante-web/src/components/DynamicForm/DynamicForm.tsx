@@ -1,9 +1,8 @@
 import { FieldError, Resolver, useForm } from 'react-hook-form';
 import { DynamicFormField } from '../../models/FormField';
-import './DynamicForm.css';
-import DynamicField from './DynamicField/DynamicField';
 import Button from '../Button/Button';
-import { zodResolver } from '@hookform/resolvers/zod';
+import DynamicField from './DynamicField/DynamicField';
+import './DynamicForm.css';
 
 export type DynamicFormProps = {
 	fields: DynamicFormField[];
